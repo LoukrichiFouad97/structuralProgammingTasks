@@ -16,7 +16,27 @@ void assignment01Task01()
     std::cout << "Number of boxes needed for a metric ton: " << boxesNeededForMetricTon << std::endl;
 }
 
-void assignment01Task02(){};
+void assignment01Task02()
+{
+    double weightInPound;
+    std::cout << "Enter your weight in pounds: " << std::endl;
+    std::cin >> weightInPound;
+
+    int numberOfMETs;
+    std::cout << "Enter MET" << std::endl;
+    std::cin >> numberOfMETs;
+    // convert pounds to kilograms
+    double weightInKilograms = weightInPound / 2.2;
+
+    int numberOfMinutes;
+    std::cout << "Enter number of minutes spent in activity" << std::endl;
+    std::cin >> numberOfMinutes;
+
+    // calculate total calories burned in minutes
+    double totalPerMinute = 0.0175 * numberOfMETs * weightInKilograms;
+    int total = static_cast<int>(totalPerMinute * numberOfMinutes);
+    std::cout << "Total calories expanded : " << total << " in " << numberOfMinutes << " Minutes" << std::endl;
+};
 void assignment01Task03(){};
 void assignment02Task01(){};
 void assignment02Task02(){};
