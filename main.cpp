@@ -95,8 +95,32 @@ void assignment02Task02()
         std::cout << "Overweight" << std::endl;
     }
 };
+
 void assignment02Task03(){};
-void assignment02Task04(){};
+
+void assignment02Task04()
+{
+    int tempValue;
+    char typeOfTemperature;
+    std::cout << "Enter the type of temperature c or f: " << std::endl;
+    std::cin >> typeOfTemperature;
+
+    if (typeOfTemperature == 'c')
+    {
+        std::cout << "Enter the temprature value: " << std::endl;
+        std::cin >> tempValue;
+        float tempratureInFahrenheit = tempValue * 9 / 5 + 32;
+        std::cout << "Temperature in Fahrenheit: " << tempratureInFahrenheit << " F" << std::endl;
+    }
+    else if (typeOfTemperature == 'f')
+    {
+        std::cout << "Enter the temprature value" << std::endl;
+        std::cin >> tempValue;
+        float tempratureInCelsius = (tempValue - 32) * 5 / 9;
+        std::cout << "Temperature in Celsius: " << tempratureInCelsius << " C" << std::endl;
+    }
+};
+
 void assignment03Task01(){};
 void assignment03Task02(){};
 void assignment03Task03(){};
@@ -108,7 +132,8 @@ int main()
     // assignment01Task02();
     // assignment01Task03();
     // assignment02Task01();
-    assignment02Task02();
+    // assignment02Task02();
+    assignment02Task04();
     std::cout << "Hey there! this is fouad here from viko university" << std::endl;
 
     return 0;
