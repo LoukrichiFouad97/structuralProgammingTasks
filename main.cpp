@@ -38,7 +38,8 @@ void assignment01Task02()
     std::cout << "Total calories expanded : " << total << " in " << numberOfMinutes << " Minutes" << std::endl;
 };
 
-void assignment01Task03(){
+void assignment01Task03()
+{
     int seconds;
     std::cout << "Enter number of seconds: " << std::endl;
     std::cin >> seconds;
@@ -51,7 +52,26 @@ void assignment01Task03(){
     std::cout << "Number of minutes: " << minutes << std::endl;
 };
 
-void assignment02Task01(){};
+void assignment02Task01()
+{
+    int number;
+    std::cout << "Enter a number: " << std::endl;
+    std::cin >> number;
+
+    if (number > 0)
+    {
+        std::cout << "Positive number" << std::endl;
+    }
+    else if (number < 0)
+    {
+        std::cout << "Negative number" << std::endl;
+    }
+    else
+    {
+        std::cout << "Zero" << std::endl;
+    }
+}
+
 void assignment02Task02(){};
 void assignment02Task03(){};
 void assignment02Task04(){};
@@ -65,6 +85,7 @@ int main()
     // assignment01Task01();
     // assignment01Task02();
     // assignment01Task03();
+    assignment02Task01();
     std::cout << "this is fouad here from viko university" << std::endl;
 
     return 0;
