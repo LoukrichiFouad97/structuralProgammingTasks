@@ -72,7 +72,29 @@ void assignment02Task01()
     }
 }
 
-void assignment02Task02(){};
+void assignment02Task02()
+{
+    int heightInCm;
+    std::cout << "Enter the your height in cm: " << std::endl;
+    std::cin >> heightInCm;
+
+    double weightInKilograms;
+    std::cout << "Enter the your weight in kg: " << std::endl;
+    std::cin >> weightInKilograms;
+
+    if (weightInKilograms < (heightInCm / 2.5))
+    {
+        std::cout << "Underweight" << std::endl;
+    }
+    else if ((heightInCm / 2.5) <= weightInKilograms <= (heightInCm / 2.3))
+    {
+        std::cout << "Normal weight" << std::endl;
+    }
+    else if (weightInKilograms > (heightInCm / 2.3))
+    {
+        std::cout << "Overweight" << std::endl;
+    }
+};
 void assignment02Task03(){};
 void assignment02Task04(){};
 void assignment03Task01(){};
@@ -85,8 +107,9 @@ int main()
     // assignment01Task01();
     // assignment01Task02();
     // assignment01Task03();
-    assignment02Task01();
-    std::cout << "this is fouad here from viko university" << std::endl;
+    // assignment02Task01();
+    assignment02Task02();
+    std::cout << "Hey there! this is fouad here from viko university" << std::endl;
 
     return 0;
 }
