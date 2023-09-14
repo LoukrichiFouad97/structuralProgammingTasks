@@ -37,7 +37,20 @@ void assignment01Task02()
     int total = static_cast<int>(totalPerMinute * numberOfMinutes);
     std::cout << "Total calories expanded : " << total << " in " << numberOfMinutes << " Minutes" << std::endl;
 };
-void assignment01Task03(){};
+
+void assignment01Task03(){
+    int seconds;
+    std::cout << "Enter number of seconds: " << std::endl;
+    std::cin >> seconds;
+
+    int minutes = seconds / 60;
+    int hours = minutes / 60;
+    int days = hours / 24;
+
+    std::cout << "Number of hours: " << hours << std::endl;
+    std::cout << "Number of minutes: " << minutes << std::endl;
+};
+
 void assignment02Task01(){};
 void assignment02Task02(){};
 void assignment02Task03(){};
@@ -50,7 +63,8 @@ int main()
 {
 
     // assignment01Task01();
-    assignment01Task02();
+    // assignment01Task02();
+    // assignment01Task03();
     std::cout << "this is fouad here from viko university" << std::endl;
 
     return 0;
